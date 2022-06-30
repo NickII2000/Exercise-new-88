@@ -28,3 +28,7 @@ console.log(answers);
 const arrForSomeOrEvery = [4, 'qwq', 'sfreferf'];
 console.log(arrForSomeOrEvery.some(item => typeof (item) === 'number'));
 console.log(arrForSomeOrEvery.every(item => typeof (item) === 'number'));
+
+const arrForSomeOrEvery2 = [4, 1000, 777];
+console.log(arrForSomeOrEvery2.some(item => typeof (item) === 'number'));
+console.log(arrForSomeOrEvery2.every(item => typeof (item) === 'number'));
