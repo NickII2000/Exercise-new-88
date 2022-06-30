@@ -52,3 +52,14 @@ const arr4 = ['apple', 'pear', 'plum'];
 const res4 = arr4.reduce((sum, current) => `${sum}, ${current}`, 'kiwi');
 console.log(res4);
 
+// object => array
+
+const obj = {
+    ivan: 'person',
+    ann: 'person',
+    dog: 'animal',
+    cat: 'animal',
+};
+const newArr = Object.entries(obj)
+    .filter(item => item[1] === 'person');
+console.log(newArr);
