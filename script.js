@@ -25,5 +25,6 @@ console.log(answers);
 
 // every/some
 
-const arrForSome = [4, 'qwq', 'sfreferf'];
-console.log(arrForSome.some(item => typeof (item) === 'number'));
+const arrForSomeOrEvery = [4, 'qwq', 'sfreferf'];
+console.log(arrForSomeOrEvery.some(item => typeof (item) === 'number'));
+console.log(arrForSomeOrEvery.every(item => typeof (item) === 'number'));
