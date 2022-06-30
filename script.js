@@ -9,3 +9,7 @@ const shortNames = names.filter(function (name) {
 });
 
 console.log(shortNames);
+
+const shortNames2 = names.filter(name => name.length >= 5);
+
+console.log(shortNames2);
