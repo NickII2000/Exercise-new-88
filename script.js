@@ -37,5 +37,9 @@ console.log(arrForSomeOrEvery2.every(item => typeof (item) === 'number'));
 const arr = [4, 5, 1, 3, 2, 6];
 //________0  4  9 10 13 15 21
 const res = arr.reduce((sum, current) => sum + current);
-
 console.log(res);
+
+const arr2 = ['apple', 'pear', 'plum'];
+const res2 = arr2.reduce((sum, current) => sum + ', ' + current);
+
+console.log(res2);
