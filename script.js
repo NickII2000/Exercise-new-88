@@ -19,8 +19,7 @@ let answers = ['IvAn', 'AnnA', 'HeLLO'];
 const result = answers.map(item => item.toLowerCase());
 console.log(result);
 
-// не рекомендуется:
-answers = answers.map(item => item.toLowerCase());
+answers = answers.map(item => item.toLowerCase()); // не рекомендуется
 console.log(answers);
 
 // every/some
@@ -32,3 +31,6 @@ console.log(arrForSomeOrEvery.every(item => typeof (item) === 'number'));
 const arrForSomeOrEvery2 = [4, 1000, 777];
 console.log(arrForSomeOrEvery2.some(item => typeof (item) === 'number'));
 console.log(arrForSomeOrEvery2.every(item => typeof (item) === 'number'));
+
+// reduce
+
