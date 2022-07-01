@@ -65,3 +65,45 @@ const newArr = Object.entries(obj)
     .filter(item => item[1] === 'person')
     .map(item => item[0]);
 console.log(newArr);
+
+// ---- Exercise #88
+
+const films = [
+    {
+        name: 'Titanic',
+        rating: 9
+    },
+    {
+        name: 'Die hard 5',
+        rating: 5
+    },
+    {
+        name: 'Matrix',
+        rating: 8
+    },
+    {
+        name: 'Some bad film',
+        rating: 4
+    }
+];
+
+function showGoodFilms(arr) {
+    return arr.filter(item => item.rating >= 8);
+}
+console.log(showGoodFilms(films));
+
+
+function showListOfFilms(arr) {
+    return arr.reduce((sum, current) => `${sum}, ${current.name}`);
+}
+console.log(showListOfFilms(films));
+
+function setFilmsIds(arr) {
+
+}
+
+const tranformedArray = setFilmsIds(films);
+
+function checkFilms(arr) {
+
+}
