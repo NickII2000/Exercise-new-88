@@ -99,11 +99,16 @@ function showListOfFilms(arr) {
 console.log(showListOfFilms(films));
 
 function setFilmsIds(arr) {
-
+    return arr.map((item, i) => {
+        item = item;
+        item.id = i;
+        return item;
+    });
 }
+console.log(setFilmsIds(films));
 
 const tranformedArray = setFilmsIds(films);
 
 function checkFilms(arr) {
-
+    return arr.every((item) => item.hasOwnProperty('id'));
 }
