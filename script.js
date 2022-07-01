@@ -45,7 +45,7 @@ console.log(res2);
 
 const arr3 = [4, 5, 1, 3, 2, 6];
 //____________7 12 13 16 18 24
-const res3 = arr3.reduce((sum, current) => sum + current, 3); // 3 - второй аргумент, начальное значение sum
+const res3 = arr3.reduce((sum, current) => sum + current, 30); // 3 - второй аргумент, начальное значение sum
 console.log(res3);
 
 const arr4 = ['apple', 'pear', 'plum'];
