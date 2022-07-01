@@ -57,6 +57,7 @@ console.log(res4);
 const obj = {
     ivan: 'person',
     ann: 'person',
+    nick: 'person',
     dog: 'animal',
     cat: 'animal',
 };
