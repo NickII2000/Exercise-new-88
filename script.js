@@ -110,6 +110,6 @@ console.log(setFilmsIds(films));
 const tranformedArray = setFilmsIds(films);
 
 function checkFilms(arr) {
-    return arr.some((item) => item.hasOwnProperty('id'));
+    return arr.every((item) => item.hasOwnProperty('id'));
 }
 console.log(checkFilms(films));
