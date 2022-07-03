@@ -117,3 +117,23 @@ function checkFilms(arr) {
 // const checkFilms = (arr) => arr.every(film => film.id || film.id === 0)
 
 console.log(checkFilms(films));
+
+// ---- Exercise #89
+
+const funds = [
+    { amount: -1400 },
+    { amount: 2400 },
+    { amount: -1000 },
+    { amount: 500 },
+    { amount: 10400 },
+    { amount: -11400 }
+];
+
+const getPositiveIncomeAmount = (data) => {
+    return data.reduce((sum, current) => sum + (current.amount > 0 ? current.amount : 0), 0);
+};
+console.log(getPositiveIncomeAmount(funds));
+
+const getTotalIncomeAmount = (data) => {
+
+};
