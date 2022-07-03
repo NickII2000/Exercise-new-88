@@ -137,10 +137,11 @@ console.log(getPositiveIncomeAmount(funds));
 
 
 const getTotalIncomeAmount = (data) => {
-    if (data.some(item => item.amount < 0)) {
-        return data.reduce((sum, current) => sum + (current.amount), 0);
-    } else {
-        return getPositiveIncomeAmount(data);
-    }
+    // if (data.some(item => item.amount < 0)) {
+    //     return data.reduce((sum, current) => sum + (current.amount), 0);
+    // } else {
+    //     return getPositiveIncomeAmount(data);
+    // }
+    return data.some(item => item.amount < 0) ? data.reduce((sum, current) => sum + (current.amount), 0) : getPositiveIncomeAmount(data);
 };
 console.log(getTotalIncomeAmount(funds));
