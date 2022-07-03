@@ -129,10 +129,12 @@ const funds = [
     { amount: -11400 }
 ];
 
+
 const getPositiveIncomeAmount = (data) => {
     return data.reduce((sum, current) => sum + (current.amount > 0 ? current.amount : 0), 0);
 };
 console.log(getPositiveIncomeAmount(funds));
+
 
 const getTotalIncomeAmount = (data) => {
     if (arr.some(item => item.amount < 0)) {
