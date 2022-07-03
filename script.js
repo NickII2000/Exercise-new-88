@@ -94,14 +94,14 @@ console.log(showGoodFilms(films));
 
 
 function showListOfFilms(arr) {
-    // return arr.reduce((sum, current) => `${sum}, ${current.name}`, '').substring(2);
-    return arr.reduce((acc, curr) => `${typeof (acc) === 'object' ? acc.name : acc}, ${curr.name}`);
+    return arr.reduce((sum, current) => `${sum}, ${current.name}`, '').substring(2);
+    // return arr.reduce((acc, curr) => `${typeof (acc) === 'object' ? acc.name : acc}, ${curr.name}`); // Решение Петроченко Ивана (учителя)
 }
 console.log(showListOfFilms(films));
 
 function setFilmsIds(arr) {
     return arr.map((item, i) => {
-        item = item;
+        // item = item;
         item.id = i;
         return item;
     });
