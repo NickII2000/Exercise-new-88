@@ -101,7 +101,7 @@ console.log(showListOfFilms(films));
 
 function setFilmsIds(arr) {
     return arr.map((item, i) => {
-        // item = item;
+        // item = item; // ранее у меня было, оказалось лишнее
         item.id = i;
         return item;
     });
@@ -113,4 +113,7 @@ const tranformedArray = setFilmsIds(films);
 function checkFilms(arr) {
     return arr.every((item) => item.hasOwnProperty('id'));
 }
+// Максимально коротко, но еще читаемо (Решение Петроченко Ивана (учителя)):
+// const checkFilms = (arr) => arr.every(film => film.id || film.id === 0)
+
 console.log(checkFilms(films));
