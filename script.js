@@ -94,7 +94,8 @@ console.log(showGoodFilms(films));
 
 
 function showListOfFilms(arr) {
-    return arr.reduce((sum, current) => `${sum}, ${current.name}`, '').substring(2);
+    // return arr.reduce((sum, current) => `${sum}, ${current.name}`, '').substring(2);
+    return arr.reduce((acc, curr) => `${typeof (acc) === 'object' ? acc.name : acc}, ${curr.name}`);
 }
 console.log(showListOfFilms(films));
 
