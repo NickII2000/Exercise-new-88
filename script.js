@@ -101,7 +101,7 @@ console.log(showListOfFilms(films));
 
 function setFilmsIds(arr) {
     return arr.map((item, i) => {
-        // item = item; // ранее у меня было, оказалось лишнее
+        item = item; // ранее у меня было, оказалось лишнее
         item.id = i;
         return item;
     });
